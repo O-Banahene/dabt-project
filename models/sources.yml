@@ -1,0 +1,10 @@
+sources:
+  - name: my_source
+    database: snowflake_sample_data
+    schema: snowflake_sample_data.tpch_sf1
+    config:
+      enabled: true
+    tables:
+      - name: customer  # enabled
+      - name: order #  enabled
+       
