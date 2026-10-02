@@ -14,10 +14,7 @@ date_cte AS (
                 THEN 'WEEKEND'
             ELSE 'BUSINESSDAY'
         END AS DAY_TYPE,
-        CASE WHEN MONTH(STARTED_AT) IN (12,1,2) THEN 'WINTER'
-             WHEN MONTH(STARTED_AT) IN (3,4,5) THEN 'SPRING'
-             WHEN MONTH(STARTED_AT) IN (6,7,8) THEN 'AUTUMN'
-        END AS STATION_OF_YEAR
+        {{function1('STARTED_AT')}} AS STATION_OF_YEAR
     FROM source_cte
 )
 
