@@ -1,10 +1,11 @@
 sources:
   - name: my_source
-    database: snowflake_sample_data
-    schema: snowflake_sample_data.tpch_sf1
+    database: skiddo
+    schema: dbt_obanahene
     config:
       enabled: true
     tables:
-      - name: customer  # enabled
-      - name: order #  enabled
+      - name: bike # enabled
+
+      - name: customer #  enabled
        
